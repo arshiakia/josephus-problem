@@ -28,3 +28,17 @@ Suicide Sequence for n=6
 
 نسبت خودکشی برای n=6 
 1, 2, 3, 4, 5, 6 ⇒ 1, 3, 5 ⇒ 5, 1, 3 ⇒ 1, 5 ⇒ 5
+
+
+```
+def josephus(n, k):  
+    if n == 1:  
+        return 0  
+    
+    return (josephus(n - 1, k) + k) % n  
+
+n = int(input("Enter the number of people (n): "))  
+k = 2  
+
+position = josephus(n, k) + 1  
+print(f"The safe position is {position}")
