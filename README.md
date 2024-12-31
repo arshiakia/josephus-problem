@@ -42,3 +42,27 @@ k = 2
 
 position = josephus(n, k) + 1  
 print(f"The safe position is {position}")
+```
+Recursion relation of Josephus' problem
+
+The recursive relation for the Josephus Problem helps us determine the position of the surviving person in a circle of \( n \) people, where every \( k^{th} \) person is eliminated. The relation is expressed as:
+
+\[
+J(n) = (J(n-1) + k) \mod n
+\]
+
+### Explanation:
+- **\( J(n) \)**: The position of the survivor among \( n \) people.
+- **\( J(n-1) \)**: The position of the survivor among \( n-1 \) people.
+- **\( k \)**: The number of people to be eliminated.
+- **\( \mod n \)**: Ensures that the result remains within the range of \( 0 \) to \( n-1 \).
+
+### Base Case:
+- For one person:
+  \[
+  J(1) = 0
+  \]
+
+Using this relation, we can calculate the position of the survivor for any number of participants. For example, with \( n = 5 \) and \( k = 2 \), we can find out that the survivor is in a specific position.
+
+
