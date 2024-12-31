@@ -51,13 +51,13 @@ The recursive relation for the Josephus Problem helps us determine the position 
 J(n) = (J(n-1) + k) \mod n
 \]
 
-### Explanation:
-- **\( J(n) \)**: The position of the survivor among \( n \) people.
-- **\( J(n-1) \)**: The position of the survivor among \( n-1 \) people.
-- **\( k \)**: The number of people to be eliminated.
-- **\( \mod n \)**: Ensures that the result remains within the range of \( 0 \) to \( n-1 \).
+Explanation:
+- \( J(n) \)**: The position of the survivor among \( n \) people.
+- \( J(n-1) \)**: The position of the survivor among \( n-1 \) people.
+- \( k \)**: The number of people to be eliminated.
+- \( \mod n \)**: Ensures that the result remains within the range of \( 0 \) to \( n-1 \).
 
-### Base Case:
+Base Case:
 - For one person:
   \[
   J(1) = 0
