@@ -59,17 +59,18 @@ Explanation:
 
 Base Case:
 - For one person:
+- </p>
   \[
   J(1) = 0
   \]
-
+</p>
 Using this relation, we can calculate the position of the survivor for any number of participants. For example, with \( n = 5 \) and \( k = 2 \), we can find out that the survivor is in a specific position.
 
 <p style="text-align: right;">  
 رابطه بازگشتی مساله ژوزفوس به ما کمک می‌کند تا موقعیت فرد نجات‌یافته در یک دایره از ( n ) نفر را محاسبه کنیم، در حالی که هر ( k^{ام} ) نفر حذف می‌شود. این رابطه به شکل زیر است:  
-
+</p>
 [ J(n) = (J(n-1) + k) \mod n ]  
-
+</p>
 توضیحات:  
 ( J(n) ): موقعیت نجات‌یافته در میان ( n ) نفر.  
 ( J(n-1) ): موقعیت نجات‌یافته در میان ( n-1 ) نفر.  
@@ -83,14 +84,15 @@ Using this relation, we can calculate the position of the survivor for any numbe
 
 مقدمه: [ J(1) = 0 ] (برای یک نفر، او نجات‌یافته است)  
 
+<p>  
 برای ( n = 2 ): [ J(2) = (J(1) + 2) \mod 2 = (0 + 2) \mod 2 = 0 ] (یعنی نفر اول نجات می‌یابد)  
-
+    
 برای ( n = 3 ): [ J(3) = (J(2) + 2) \mod 3 = (0 + 2) \mod 3 = 2 ] (یعنی نفر سوم نجات می‌یابد)  
 
 برای ( n = 4 ): [ J(4) = (J(3) + 2) \mod 4 = (2 + 2) \mod 4 = 0 ] (یعنی نفر اول نجات می‌یابد)  
 
 برای ( n = 5 ): [ J(5) = (J(4) + 2) \mod 5 = (0 + 2) \mod 5 = 2 ] (یعنی نفر سوم نجات می‌یابد)  
-
+</p>
 نتیجه:  
 بنابراین، در یک دایره از 5 نفر که هر دومین نفر حذف می‌شود، فرد نجات‌یافته در موقعیت ( J(5) + 1 = 3 ) قرار دارد (چون از 0 شروع کرده‌ایم و شماره‌گذاری افراد معمولاً از 1 شروع می‌شود).  
 
